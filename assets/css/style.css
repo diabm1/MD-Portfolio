@@ -1,0 +1,36 @@
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+}
+
+header h1 {
+    width: 50%;
+    margin-left: 2em;
+}
+
+header nav {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 1em;
+}
+
+section {
+    display: flex;
+}
+
+section .float-left {
+    width: 30%;
+    margin-left: 2em;
+}
