@@ -64,3 +64,20 @@ img:hover {
 .fixed-top {
   position: relative;
 }
+.about-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.project-section{
+  display: flex;
+  padding: 1rem;
+}
+.project-section img {
+  width: 100%;
+}
+.project-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
