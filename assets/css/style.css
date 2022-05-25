@@ -1,40 +1,66 @@
 body {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 header {
-    display: flex;
+  display: flex;
 }
 
 header h1 {
-    width: 50%;
-    margin-left: 2em;
+  width: 50%;
+  margin-left: 2em;
 }
 
 header nav {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 header nav ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 header nav ul li {
-    margin: 1em;
+  margin: 1em;
 }
 
 section {
-    display: flex;
+  display: flex;
 }
 
 section .float-left {
-    width: 30%;
-    margin-left: 2em;
+  width: 30%;
+  margin-left: 2em;
+}
+
+.img-parent {
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  background-color: rgb(75, 71, 71, 0.25);
+  text-align: center;
+  border: 3px solid rgb(194, 188, 188);
+  padding-bottom: 1em;
+}
+.content {
+  max-width: 80%;
+  margin: auto;
+}
+
+img {
+  opacity: 0.25;
 }
 
 img:hover {
-    border: 3px solid blue;
+  opacity: 1;
+  border: 3px solid blue;
+}
+.fixed-top {
+  position: relative;
 }
