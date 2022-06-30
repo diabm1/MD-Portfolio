@@ -1,83 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motasem Diab</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-<body>
-    <div class="content">
-        <header>
-            <h1>Motasem's Portfolio</h1>
-            <nav class="navbar navbar-expand-lg fixed-top navbarScrol">
-                <ul>
-                    <li>About</li>
-                    <li>Portfolio</li>
-                    <li>Contact Me</li>
-                </ul>
-            </nav>
-        </header>
-        <section id="about" style="background-color: cyan; display: grid;">
-            <div class="about-section">
-                <h2>About me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quo, modi perferendis, et numquam
-                    quod, similique ullam quibusdam a in iusto repudiandae quis. Hic accusamus facere incidunt quam
-                    quibusdam ad.</p>
-            </div>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
 
-            <div class="project-section">
-                <h2>My Projects</h2>
-                <div class="img-parent">
-                    <a href="https://coding-compass.herokuapp.com/"><img src="./assets/images/Screenshot.png" alt="" width="40" height="350"></a>
-                    <h4>Coding-Compass</h4><a href="https://github.com/hienm9/Coding-Compass">Github link</a> 
-                    <a href="https://coding-compass.herokuapp.com/">Deployed/website link</a>
-                </div>
-            </div>
-            
-            <div class="project-grid"
-            style="border: 1px solid black; width: 100%; display: flex; justify-content: space-around;">
-            <div class="img-parent">
-                <img src="./assets/images/Screen Shot 2022-03-06 at 2.34.34 PM.png" alt="">
-                <div class="banner">
-                    <h4>Coding Quiz</h4><a href="www.google.com">Github link</a>
-                    <a href="https://www.google.com/">Deployed/website link</a>
-                </div>
-            </div>
-            <div class="img-parent">
-                <img src="./assets/images/Screen Shot 2022-03-06 at 2.35.06 PM.png" alt="" width="350" height="350">
-                <div class="banner">Project banner</div>
-            </div>
-            <div class="img-parent">
-                <img src="./assets/images/Screen Shot 2022-03-06 at 2.35.22 PM.png" alt="" width="473" height="350">
-                <div class="banner">Project banner</div>
-            </div>
-            <div class="img-parent">
-                <img src="https://via.placeholder.com/350.png" alt="">
-                <div class="banner">Project banner</div>
-            </div>
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Motasem Diab | Web Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <h1>MOTASEM DIAB</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img
+          src="assets/images/IMG_6436.jpg"
+          alt="motasem-diab"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Semi-self-taught Web Developer.
+          </p>
         </div>
+  </section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+        autem deleniti cupiditate molestias quis unde quae totam porro dicta
+        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+        nostrum dolor minus, libero delectus praesentium perferendis
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+        consequuntur labore? Ea totam voluptas amet!
+      </p>
     </section>
 
-        <section id="contact" style="background-color: limegreen;">
-            <div class="float-left">Contact Me</div>
-            <div>
-                <form style="display: flex; flex-direction: column; margin-top: 2em; margin-bottom: 2em;">
-                    <label for="name">Enter your Name:</label>
-                    <input type="text" name="name" id="contact-name">
-                    <label for="email">Enter your email:</label>
-                    <input type="text" name="email" id="contact-email">
-                    <label for="message">Message:</label>
-                    <textarea type="text" name="name" id="contact-name"></textarea>
-                </form>
-            </div>
-        </section>
-    </div>
-</body>
 
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-react-native.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/code-quiz.png"
+            alt="code-quiz"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Coding Quiz</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/workday-scheduler.png"
+            alt="workday-scheduler"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Workday Scheduler</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/weather-dashboard.png"
+            alt="weather-dashboard"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Weather Dashboard</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter-circled.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+  /></i>
+
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built by
+        <a href="https://example.com" target="_blank"
+          >Motasem Diab</a
+        >
+      </p>
+</footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
